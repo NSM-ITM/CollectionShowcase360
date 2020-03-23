@@ -1,0 +1,503 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta id="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+<title>ITM Collection Showcase</title>
+<style type="text/css">
+	html, body {
+		padding:0; 
+		margin:0; 
+		width:100vw; 
+		height:100vh; 
+		overflow:hidden; 
+		color:#fff; 
+		text-align:center;
+
+	}
+	body * {
+		padding:0; 
+		margin:0; 
+		border:0;
+	}
+	.wrapper {
+		width:100vw; 
+		height:100vh; 
+		position:absolute; 
+		left:0vw; 
+		top:0vh; 
+		background:#333;
+	} 
+	.wrapper .panel {
+		width:100vw; 
+		height:100vh; 
+		overflow:hidden; 
+		position:absolute; 
+		left:0; 
+		top:0; 
+		z-index:10; 
+		opacity:1; 
+		transition:opacity 1s;
+	}
+	img {
+		position:absolute; 
+		top:-1000vh; 
+		bottom:-1000vh; 
+		left:-1000vw; 
+		right:-1000vw; 
+		margin:auto; 
+		z-index:10;
+	}
+	img.cover {
+		display:block; 
+		width:100vw; 
+		height:75vw; 
+		min-height:100vh; 
+		min-width:calc(100vh * 4 / 3);
+	}
+
+	@viewport {
+		width:extend-to-zoom; 
+		zoom:1.0;
+	}
+
+</style>
+<style>
+	.white-popup {
+		position: relative;
+		background: #FFF;
+		padding: 20px;
+		width: auto;
+		width: 600px;
+		min-height:	300px;
+		margin: 20px auto;
+		color:	black;
+	}
+	/* overlay at start */
+	.mfp-fade.mfp-bg {
+	  opacity: 0;
+
+	  -webkit-transition: all 0.15s ease-out;
+	  -moz-transition: all 0.15s ease-out;
+	  transition: all 0.15s ease-out;
+	}
+	/* overlay animate in */
+	.mfp-fade.mfp-bg.mfp-ready {
+	  opacity: 0.8;
+	}
+	/* overlay animate out */
+	.mfp-fade.mfp-bg.mfp-removing {
+	  opacity: 0;
+	}
+
+	/* content at start */
+	.mfp-fade.mfp-wrap .mfp-content {
+	  opacity: 0;
+
+	  -webkit-transition: all 0.15s ease-out;
+	  -moz-transition: all 0.15s ease-out;
+	  transition: all 0.15s ease-out;
+	}
+	/* content animate it */
+	.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	  opacity: 1;
+	}
+	/* content animate out */
+	.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	  opacity: 0;
+	}
+
+	.threesixty_images img {
+		position: auto!important; 
+		top: auto!important; 
+		bottom: auto!important; 
+		margin:0 auto!important; 
+		z-index:auto!important;
+		max-height: 450px;
+   		width: auto!important;
+	}
+
+	.itm-rep {
+		display: block;
+		right: 0px;
+		bottom:	0px;
+		z-index: 999;
+		position: absolute;
+	}
+	.itm-rep h2 {
+		color: #999;
+	    margin: 0px;
+	    line-height: inherit;
+	    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	    opacity: 0.5;
+	    padding-bottom:	0.5pc;
+	}
+	.itm-rep h3 {
+		margin: 0px;
+		line-height: inherit;
+		color: #222;
+	    margin: 0px;
+	    line-height: inherit;
+	    opacity: 0.5;
+	}
+	.item-description {
+		overflow: hidden;
+		font-family: monospace !important;
+	}
+	.donor {
+		float:right;
+		display: block;
+	    font-style: italic;
+
+
+	}
+	.content {
+		float: left;
+		margin-bottom:	10px;
+	}
+
+	.threesixty-sign {
+		float:left;
+	}
+	.threesixty-sign img {
+		width:	50px;
+		position: inherit;
+	}
+</style>
+<link rel="stylesheet" href="assets/css/magnific-popup.css">
+<link rel="stylesheet" href="assets/css/threesixty.css">
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<link rel="stylesheet" href="assets/css/bootstrap-responsive.css">
+
+<script type="text/javascript" src="assets/js/jquery-2.0.0.js"></script>
+<script type="text/javascript" src="assets/js/jquery.rwdImageMaps.js"></script>
+<script type="text/javascript" src="assets/js/jquery.magnific-popup.js"></script>
+<script type="text/javascript" src="assets/js/threesixty.js"></script>
+
+
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="itm-rep">
+		<h2>พิพิธภัณฑ์เทคโนโลยีสารสนเทศ</h2><h3> องค์การพิพิธภัณฑ์วิทยาศาสตร์แห่งชาติ</h3>
+	</div>
+	<div class="panel">
+		<img class="cover" src="assets/image/retro/normal-res.jpg" alt=""usemap="#powerpuffgirls" alt="" />
+		<map name="powerpuffgirls">
+			
+			<area href="#popup-abacus" class="open-popup-link" shape="poly" coords="1628, 1692, 1960, 1637, 2051, 1671, 2056, 1694, 1709, 1761, 1627, 1718, 1628, 1695" title="Abacus" alt="Abacus" />
+
+			<area href="#popup-dipole-antenna" class="open-popup-link" shape="poly" coords="3062, 768, 3248, 759,3176, 1078, 3103, 1077, 3068, 771" title="Dipole Antenna" alt="Dipole Antenna" />
+
+			<area href="#popup-film-camera" class="open-popup-link" shape="poly" coords="968, 1452, 1077, 1445, 1082, 1498, 969, 1507, 967, 1453" title="Film Camera" alt="Film Camera" />
+
+			<area href="#popup-mechanical-calculator" class="open-popup-link" shape="poly" coords="2069, 1631, 2071, 1600, 2088, 1576, 2103, 1534, 2134, 1509, 2170, 1491, 2215, 1488, 2263, 1488, 2301, 1507, 2314, 1543, 2322, 1587, 2322, 1602, 2323, 1621, 2284, 1650, 2237, 1659, 2112, 1646, 2070, 1633, 2071, 1607" title="Mechanical Calculator" alt="Mechanical Calculator" />
+
+			<area href="#popup-radio" class="open-popup-link" shape="poly" coords="598, 1009, 1026, 995, 1027, 863, 1054, 852, 1059, 866, 1062, 928, 1061, 982, 1062, 1001, 1125, 1009, 1138, 1234, 658, 1267, 608, 1250, 597, 1015" title="Radio" alt="Radio" />
+
+			<area href="#popup-television" class="open-popup-link" shape="poly" coords="2898, 1083, 3403, 1088, 3410, 1435, 3245, 1471, 2886, 1413, 2899, 1083" title="Television" alt="Television" />
+
+			<area href="#popup-typewriter" class="open-popup-link" shape="poly" coords="1654, 1582, 1693, 1557, 1889, 1525, 1927, 1546, 1935, 1561, 1962, 1574, 1967, 1608, 1764, 1637, 1653, 1593" title="Typewriter" alt="Typewriter" />
+
+			<area href="#popup-vinyl-player" class="open-popup-link" shape="poly" coords="2190, 1343, 2244, 1331, 2269, 1191, 2236, 1140, 2252, 1102, 2490, 1113, 2587, 1288, 2578, 1541, 2448, 1565, 2328, 1540, 2298, 1472, 2223, 1464, 2192, 1345" title="Vinyl Player" alt="Vinyl Player" />
+
+			<area href="#popup-vinyl" class="open-popup-link" shape="poly" coords="660, 1333, 1055, 1300, 1067, 1433, 955, 1444, 955, 1494, 669, 1527, 662, 1337" title="Vinyl" alt="Vinyl" />
+
+			<area href="#popup-wheel-telephone" class="open-popup-link" shape="poly" coords="3819, 1859, 3843, 1825, 3839, 1780, 3843, 1739, 4071, 1800, 4066, 1833, 4032, 1843, 4035, 1863, 3974, 1898, 3828, 1862" title="Wheel Telephone" alt="Wheel Telephone" />
+
+		</map>
+
+	</div>
+
+	<div id="popup-abacus" class="item-description white-popup mfp-hide">
+		<h1>ลูกคิดจีน</h1>
+	  	<div class="threesixty abacus">
+		    <div class="spinner">
+		        <span>0%</span>
+		    </div>
+		    <ol class="threesixty_images"></ol>
+		</div>
+
+		
+		<div class="content">
+
+			ผลิตขึ้นในช่วง 3000 ปีก่อน โดยชาวจีน ใช้คำนวณ บวก ลบ คูณ หาร เลขจำนวนเต็ม โดยองค์การการศึกษา วิทยาศาสตร์ และวัฒนธรรมแห่งสหประชาชาติ หรือยูเนสโก ได้ประกาศให้ “ลูกคิดจีน” เป็นมรดกภูมิปัญญาทางวัฒนธรรมของโลกในปี ค.ศ. 2008
+		</div>
+		<div class="threesixty-sign"><img src="assets/image/360-rotate.png"></div>
+		<div class="donor">
+			ผู้บริจาค คุณณัฐนนท์ อัครภานุวิทยา<br>
+			ปีที่ได้รับบริจาค พ.ศ. 2553
+		</div>
+		
+	</div>
+	
+	<div id="popup-dipole-antenna" class="item-description white-popup mfp-hide">
+	  <h1>สายอากาศไดโพล</h1>
+	  <div class="threesixty dipole-antenna">
+		    <div class="threesixty" style="width: 100%; height: 450px;">
+		    	<ol class="threesixty_images" style="display: block;">
+		    		<li><img src="assets/image/retro/dipole-antenna.jpg"></li>
+		   		</ol>
+			</div>
+		</div>
+
+		<div class="content">
+			ถูกสร้างขึ้นเป็นครั้งแรกในปี ค.ศ. 1888 โดย Heinrich Hertz ชาวเยอรมัน ได้ทดลองเพื่อพิสูจน์ว่าคลื่นแม่เหล็กไฟฟ้ามีอยู่จริง โดยวางสายอากาศแบบไดโพลหลายตัวไว้ที่จุดโฟกัสของกลุ่มแผงสะท้อนคลื่นแบบโค้งเพื่อให้มีการทำงานทั้งรับและส่ง ปรากฏว่า สามารถรับสัญญาณได้
+		</div>
+		<div class="donor">
+			ผู้บริจาค คุณณรงค์ศักดิ์ สุขอร่าม<br>
+			ปีที่ได้รับบริจาค พ.ศ. 2559
+
+		</div>
+
+
+	</div>
+	
+	<div id="popup-film-camera" class="item-description white-popup mfp-hide">
+	  <h1>กล้องถ่ายรูป Canon FTb QL</h1>
+	  <div class="threesixty film-camera">
+		    <div class="spinner">
+		        <span>0%</span>
+		    </div>
+		    <ol class="threesixty_images"></ol>
+		</div>
+		
+		<div class="content">
+			กล้องถ่ายรูปประเภทสะท้อนภาพเลนส์เดี่ยว ยี่ห้อ Canon รุ่น FTb QL พร้อมเลนส์ Canon FD f2.0 ขนาด 35 mm. ผลิตในประเทศญี่ปุ่น เปิดตัวครั้งแรกในปี ค.ศ. 1971 โดย "QL" ย่อมาจาก Quick Load มีระบบโหลดฟิล์มอัตโนมัติ ทำให้การถ่ายภาพสะดวกรวดเร็วขึ้น 
+		</div>
+		<div class="threesixty-sign"><img src="assets/image/360-rotate.png"></div>
+		<div class="donor">
+			ผู้บริจาค คุณธนพร อินศิริ <br>
+			ปีที่ได้รับบริจาค พ.ศ. 2557
+		</div>
+
+	</div>
+	
+	<div id="popup-mechanical-calculator" class="item-description white-popup mfp-hide">
+	  <h1>เครื่องคำนวณ Todd Protectograph</h1>
+	  <div class="threesixty mechanical-calculator">
+		    <div class="threesixty" style="width: 100%; height: 450px;">
+		    	<ol class="threesixty_images" style="display: block;">
+		    		<li><img src="assets/image/retro/mechanical-calculator.jpg"></li>
+		   		</ol>
+			</div>
+
+		</div>
+
+		<div class="content">
+			เครื่องคำนวณ Todd Protectograph Model 60 เป็นเครื่องคำนวณแบบฟันเฟือง
+ผลิตโดยบริษัท Todd Company ประเทศสหรัฐอเมริกา 
+
+		</div>
+		<div class="donor">
+			ผู้บริจาค ศูนย์วิทยาศาสตร์เพื่อการศึกษา<br>
+			ปีที่ได้รับบริจาค พ.ศ. 2552
+		</div>
+	</div>
+	
+	<div id="popup-radio" class="item-description white-popup mfp-hide">
+	  <h1>วิทยุธานินทร์ TF-2111</h1>
+	  <div class="threesixty radio">
+		    <div class="threesixty" style="width: 100%; height: 450px;">
+		    	<ol class="threesixty_images" style="display: block;">
+		    		<li><img src="assets/image/retro/radio.jpg"></li>
+		   		</ol>
+			</div>
+
+		</div>
+		<div class="content">
+			วิทยุทรานซิสเตอร์ สัญชาติไทย ที่ออกแบบมาให้สามารถรับวิทยุ AM และ FM ได้ชัดเจน ระบบ STEREO มี ลำโพง 3 ตัว
+
+
+		</div>
+		<div class="donor">
+			ผู้บริจาค คุณบุญหลาย ศรีบุญเรือง<br>
+			ปีที่ได้รับบริจาค พ.ศ. 2560
+		</div>
+	</div>
+	
+	<div id="popup-television" class="item-description white-popup mfp-hide">
+	  <h1>โทรทัศน์ ขาว-ดำ Metz</h1>
+	  <div class="threesixty television">
+		    <div class="threesixty" style="width: 100%; height: 450px;">
+		    	<ol class="threesixty_images" style="display: block;">
+		    		<li><img src="assets/image/retro/television.jpg"></li>
+		   		</ol>
+			</div>
+    </div>
+
+
+		<div class="content">
+			เครื่องรับโทรทัศน์ขาว-ดำ ยี่ห้อ Metz รุ่น 866 ผลิตในประเทศเยอรมัน โดยบริษัท Metz Consumer Electronics ซึ่งก่อนที่จะผลิตโทรทัศน์ บริษัท Metz ผลิตเครื่องรับวิทยุมาก่อน และในปัจจุบันยังมีผลิตภัณฑ์ที่เป็นโทรทัศน์รุ่นใหม่ด้วย 
+		</div>
+		<div class="donor">
+			ผู้บริจาค คุณณรงค์ศักดิ์ สุขอร่าม<br>
+			ปีที่ได้รับบริจาค พ.ศ. 2559
+		</div>
+
+	</div>
+	
+	<div id="popup-typewriter" class="item-description white-popup mfp-hide">
+	  <h1>เครื่องพิมพ์ดีด Hermes Baby</h1>
+	  <div class="threesixty typewriter">
+		    <div class="spinner">
+		        <span>0%</span>
+		    </div>
+		    <ol class="threesixty_images"></ol>
+		</div>
+
+		<div class="content">
+			บริษัท Hermes เป็นบริษัทผลิตเครื่องพิมพ์ดีดในประเทศสวิสเซอร์แลนด์ นิยมทำตัวเครื่องเป็นสีเขียวแทบทุกรุ่น โดย Hermes Baby เป็นรุ่นที่ถูกผลิตในช่วงปี ค.ศ. 1940 - 1954
+		</div>
+		<div class="threesixty-sign"><img src="assets/image/360-rotate.png"></div>
+		<div class="donor">
+			ปีที่ได้รับบริจาค พ.ศ. 2555
+		</div>
+	</div>
+	
+	<div id="popup-vinyl-player" class="item-description white-popup mfp-hide">
+	  <h1>เครื่องเล่นแผ่นเสียงครั่ง</h1>
+	  <div class="threesixty vinyl-player">
+		    <div class="threesixty" style="width: 100%; height: 450px;">
+		    	<ol class="threesixty_images" style="display: block;">
+		    		<li><img src="assets/image/retro/vinyl-player.jpg"></li>
+		   		</ol>
+			</div>
+
+		</div>
+
+		<div class="content">
+			Emile Berliner ชาวเยอรมัน เป็นเจ้าของสิทธิบัตรเครื่องเล่นแผ่นเสียงหรือจานเสียงแบบโบราณ เมื่อปี ค.ศ. 1887 พร้อมกับแผ่นเสียงครั่งซึ่งเป็นเทคโนโลยีบันทึกเสียงชนิดใหม่ในยุคนั้น สามารถเล่นเพลงที่บันทึกในแผ่นโดยไขลานและวางเข็มบนจานแผ่นเสียง 
+		</div>
+		<div class="donor">
+			ผู้บริจาค คุณณรงค์ศักดิ์ สุขอร่าม<br>
+			ปีที่ได้รับบริจาค พ.ศ. 2559
+		</div>
+
+	</div>
+
+	<div id="popup-vinyl" class="item-description white-popup mfp-hide">
+	  <h1>แผ่นเสียงไวนิล</h1>
+	  <div class="threesixty vinyl">
+		    <div class="threesixty" style="width: 100%; height: 450px;">
+		    	<ol class="threesixty_images" style="display: block;">
+		    		<li><img src="assets/image/retro/vinyl.jpg"></li>
+		   		</ol>
+			</div>
+
+		</div>
+
+		<div class="content">
+			บริษัทแผ่นเสียงโคลัมเบีย ประเทศสหรัฐอเมริกา ได้พัฒนาแผ่นบันทึกเสียงลองเพลย์ หรือ แผ่นเสียงไวนิล (Vinyl) ขึ้น ในปี ค.ศ. 1948 มีขนาดบางเบา ตกไม่แตก คุณภาพเสียงทุ้ม นุ่มนวล มีเส้นผ่านศูนย์กลางขนาด 12 นิ้ว บันทึกเสียงได้ด้านละ 20 นาที 
+		</div>
+		<div class="donor">
+			ผู้บริจาค คุณณรงค์ศักดิ์ สุขอร่าม<br>
+			ปีที่ได้รับบริจาค พ.ศ. 2559
+		</div>
+
+	</div>
+	
+	<div id="popup-wheel-telephone" class="item-description white-popup mfp-hide">
+	  <h1>โทรศัพท์อีริคสัน DBH 1001</h1>
+	  <div class="threesixty wheel-telephone">
+		    <div class="spinner">
+		        <span>0%</span>
+		    </div>
+		    <ol class="threesixty_images"></ol>
+		</div>
+
+		<div class="content">
+			โทรศัพท์อีริคสัน รุ่น DBH 1001 ผลิตจำหน่ายเมื่อปี ค.ศ.1931 เป็น โครงการความร่วมมือระหว่าง LM Ericsson และ Televerket (สวีเดน) ออกแบบโดย Christian Bjerknes และ Jean Heiberg เป็นครั้งแรกที่ใช้วัสดุตัวครอบโทรศัพท์เป็นฉนวนพลาสติก (Bakelite) ซึ่งมีความเหนียวและไม่นำไฟฟ้า ซึ่งเป็นนิยมและทันสมัยมากในขณะนั้น
+
+		</div>
+		<div class="threesixty-sign"><img src="assets/image/360-rotate.png"></div>
+		<div class="donor">
+			ปีที่ได้รับบริจาค พ.ศ. 2553
+		</div>
+
+	</div>
+	
+</div>
+
+</body>
+<script>
+	$(document).ready(function(e) {
+		$('img[usemap]').rwdImageMaps();
+		
+		$('.open-popup-link').on('click', function() {
+			init();	
+			console.log($(this).attr('alt') + ' clicked');
+
+		});
+
+		$('.open-popup-link').magnificPopup({
+		  type:'inline',
+		  midClick: true,
+		  //removalDelay: 300,
+		  mainClass: 'mfp-fade'
+		});
+
+
+	    
+		
+
+	});
+
+function init(){
+
+	$('.abacus').ThreeSixty({
+	        totalFrames: 49,
+	        endFrame: 49,
+	        currentFrame: 1,
+	        imgList: '.threesixty_images',
+	        progress: '.spinner',
+	        imagePath:'assets/image/retro/abacus/',
+	        filePrefix: '',
+	        ext: '.jpg',
+        	responsive: true
+	    });
+
+	$('.film-camera').ThreeSixty({
+	        totalFrames: 49,
+	        endFrame: 49,
+	        currentFrame: 1,
+	        imgList: '.threesixty_images',
+	        progress: '.spinner',
+	        imagePath:'assets/image/retro/film-camera/',
+	        filePrefix: '',
+	        ext: '.jpg',
+        	responsive: true
+	    });
+
+	$('.typewriter').ThreeSixty({
+	        totalFrames: 49,
+	        endFrame: 49,
+	        currentFrame: 1,
+	        imgList: '.threesixty_images',
+	        progress: '.spinner',
+	        imagePath:'assets/image/retro/typewriter/',
+	        filePrefix: '',
+	        ext: '.jpg',
+        	responsive: true
+	    });
+	
+	$('.wheel-telephone').ThreeSixty({
+	        totalFrames: 49,
+	        endFrame: 49,
+	        currentFrame: 1,
+	        imgList: '.threesixty_images',
+	        progress: '.spinner',
+	        imagePath:'assets/image/retro/wheel-telephone/',
+	        filePrefix: '',
+	        ext: '.jpg',
+        	responsive: true
+	    });
+
+}
+
+
+</script>
+
+</html>
